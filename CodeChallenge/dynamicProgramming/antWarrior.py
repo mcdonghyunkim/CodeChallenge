@@ -1,5 +1,5 @@
 # 정수 N을 입력 받기
-n = int(intpu())
+n = int(input())
 # 모든 식량 정보 입력 받기
 array = list(map(int, input().split()))
 

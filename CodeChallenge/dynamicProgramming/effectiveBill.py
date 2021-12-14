@@ -14,7 +14,6 @@ d = [10001] * (m + 1)
 d[0] = 0
 for i in range(n): # 화폐의 종류 갯수만큼 반복
     for j in range(array[i], m + 1): # 각 화폐의 단위로 리스트의 길이만큼 반복
-        print(j)
         if d[j - array[i]] != 10001: # (i - k)원을 만드는 방법이 존재하는 경우
             d[j] = min(d[j], d[j - array[i]] + 1)
 
